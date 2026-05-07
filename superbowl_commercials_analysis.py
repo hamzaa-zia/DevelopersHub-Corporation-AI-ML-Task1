@@ -7,8 +7,10 @@ import seaborn as sns
 from matplotlib.ticker import FuncFormatter
 
 
-DATA_PATH = Path(r"E:\Internship\Super+Bowl+Commercials\superbowl_commercials.csv")
-OUTPUT_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent
+
+DATA_PATH = BASE_DIR / "superbowl_commercials.csv"
+OUTPUT_DIR = BASE_DIR
 
 
 def compact_number(value: float, _: int) -> str:
